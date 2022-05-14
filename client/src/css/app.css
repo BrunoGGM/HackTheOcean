@@ -1,0 +1,13 @@
+@font-face {
+    font-family: "vcr_osd_monoregular";
+    src: url("./fonts/vcr_osd_mono-webfont.woff2") format("woff2"),
+        url("./fonts/vcr_osd_mono-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "vcr_osd_monoregular" !important;
+}

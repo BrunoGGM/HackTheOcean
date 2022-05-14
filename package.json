@@ -4,6 +4,8 @@
   "description": "Repositorio para el hackathon \"HACK THE OCEAN\" de LauchX",
   "main": "index.js",
   "scripts": {
+    "start": "node server.js",
+    "migration": "prisma migrate dev --name init",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
