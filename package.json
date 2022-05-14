@@ -1,0 +1,23 @@
+{
+  "name": "HackTheOcean",
+  "version": "1.0.0",
+  "description": "Repositorio para el hackathon \"HACK THE OCEAN\" de LauchX",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrunoGGM/HackTheOcean.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BrunoGGM/HackTheOcean/issues"
+  },
+  "homepage": "https://github.com/BrunoGGM/HackTheOcean#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
