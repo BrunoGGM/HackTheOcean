@@ -29,12 +29,12 @@ app.post("/api/users", async (req, res) => {
   return res.json({ message });
 });
 
-  app.get('/animals', async (req, res) => {
+  app.get('/api/animals', async (req, res) => {
     const allAnimal =  await prisma.animal.findMany({});
     res.json(allAnimal);
   });
 
-  app.post('/animals', async (req, res) => {
+  app.post('/api/animals', async (req, res) => {
     const animal = {
       name: req.body.name,
       description: req.body.description,
