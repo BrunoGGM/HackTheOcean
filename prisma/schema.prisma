@@ -24,7 +24,7 @@ model Animal {
   id Int @default(autoincrement())
   nameAnimal String @unique
   description String @db.Text
-  img Bytes @db.ByteA
+  img String @db.VarChar(255)
   dateCreated DateTime @default(now())
   lastUpdated DateTime @updatedAt
 }
