@@ -10,6 +10,11 @@ app.get('/', (req, res) => {
   res.json({message: 'alive'});
 });
 
+app.get('/users', async (req, res) => {
+    const allUsers =  await prisma.user.findMany({});
+    res.json(allUsers);
+  });
+
 app.listen(port, () => {
   console.log(`Listening to requests on port ${port}`);
 });
