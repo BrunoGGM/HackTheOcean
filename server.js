@@ -34,6 +34,11 @@ app.get('/users', async (req, res) => {
     return res.json({message});
   });
 
+  app.get('/animals', async (req, res) => {
+    const allAnimal =  await prisma.animal.findMany({});
+    res.json(allAnimal);
+  });
+   
 app.listen(port, () => {
   console.log(`Listening to requests on port ${port}`);
 });
