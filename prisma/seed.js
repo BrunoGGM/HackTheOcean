@@ -25,9 +25,21 @@ const prisma = new PrismaClient();
       },
     });
 
+    
+    const animal = await prisma.animal.upsert({
+        where: { nameAnimal: 'La ballena azul' },
+        update: {},
+        create: {
+          nameAnimal: 'La ballena azul',
+               description: 'A pesar de ser el animal más grande del mundo, es uno de los que también se encuentra en peligro de extinción. Solo quedan unos pocos ejemplares de ballena azul en el Golfo de California y sur de Chile.',
+               img: './img/ballena.jpg',
+               
+        },
+      });
 
 
-    console.log('Create Users');
+
+    console.log('Create Users y Animal');
   } catch(e) {
     console.error(e);
     process.exit(1);
