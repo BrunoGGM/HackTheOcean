@@ -38,6 +38,20 @@ app.get('/users', async (req, res) => {
     const allAnimal =  await prisma.animal.findMany({});
     res.json(allAnimal);
   });
+
+  app.post('/animals', async (req, res) => {
+    const animal = {
+      nameAnimal: req.body.nameAnimal,
+      description: req.body.description,
+      img: req.body.img,
+      
+
+     };
+    const message = 'Animal creado creado.';
+    await prisma.animal.create({data: animal});
+    return res.json({message});
+  });
+
    
 app.listen(port, () => {
   console.log(`Listening to requests on port ${port}`);
