@@ -22,9 +22,11 @@ model User {
 
 model Animal {
   id Int @default(autoincrement())
-  nameAnimal String @unique
+  name String @unique
   description String @db.Text
-  img String @db.VarChar(255)
+  description_danger String @db.Text
+  img_Front_Path String @db.VarChar(255)
+  img_back_Path String @db.VarChar(255)
   dateCreated DateTime @default(now())
   lastUpdated DateTime @updatedAt
 }
