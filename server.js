@@ -41,11 +41,11 @@ app.get('/users', async (req, res) => {
 
   app.post('/animals', async (req, res) => {
     const animal = {
-      nameAnimal: req.body.nameAnimal,
+      name: req.body.name,
       description: req.body.description,
-      img: req.body.img,
-      
-
+      description_danger: req.body.description_danger,
+      img_Front_Path: req.body.img_Front_Path,
+      img_back_Path: req.body.img_back_Path
      };
     const message = 'Animal creado creado.';
     await prisma.animal.create({data: animal});
