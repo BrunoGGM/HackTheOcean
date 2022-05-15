@@ -26,7 +26,7 @@
             <h4 class="text-center">{{ activity.name }}</h4>
           </div>
           <div class="col-12 mb-1">
-            {{ activity.description_dangers }}
+            {{ activity.description_danger }}
             <hr />
           </div>
         </div>
