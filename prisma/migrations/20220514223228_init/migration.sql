@@ -4,8 +4,8 @@ CREATE TABLE "Animal" (
     "name" TEXT NOT NULL,
     "description" TEXT NOT NULL,
     "description_danger" TEXT NOT NULL,
-    "img_Front_Path" VARCHAR(255) NOT NULL,
-    "img_back_Path" VARCHAR(255) NOT NULL,
+    "img_front_path" VARCHAR(255) NOT NULL,
+    "img_back_path" VARCHAR(255) NOT NULL,
     "dateCreated" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "lastUpdated" TIMESTAMP(3) NOT NULL
 );

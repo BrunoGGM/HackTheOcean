@@ -39,8 +39,8 @@ app.post("/api/users", async (req, res) => {
       name: req.body.name,
       description: req.body.description,
       description_danger: req.body.description_danger,
-      img_Front_Path: req.body.img_Front_Path,
-      img_back_Path: req.body.img_back_Path
+      img_front_path: req.body.img_Front_Path,
+      img_back_path: req.body.img_back_Path
      };
     const message = 'Animal creado creado.';
     await prisma.animal.create({data: animal});
