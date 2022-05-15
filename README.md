@@ -5,7 +5,7 @@
 # HackTheOcean
 Repositorio para el hackathon "HACK THE OCEAN" de LauchX 
 
-# PETrackers
+## PETrackers
 
  * launchx02730@innovaccion.mx -> Alejandro Gutiérrez
 
@@ -33,6 +33,8 @@ Creación de página web interactiva para crear conciencia en las personas con e
 
 Deploy en Azure por Bruno
 
+Link de despliegue: [PETrackers](https://ocean-x.azurewebsites.net/).
+
 ## Ejecutar el proyecto
 
 En la carpeta raiz crear un archivo llamado .env con lo siguiente dentro DATABASE_URL="postgresql://postgres:root@localhost:5432/ocean?schema=public"
@@ -49,10 +51,14 @@ Después
     cd client
     npm install 
     npm run watch
-    
 
-## ¿Te vas a ir sin ver este video? 
+Se visualizará en: 
+
+    http://localhost:3000 o http://localhost:8080
+
+## ¿Te vas a ir sin ver este video?
 
 <p align="center">
   <img src="https://i.pinimg.com/originals/60/c1/4a/60c14a43fb4745795b3b358868517e79.png" width="350" title="Bromita, sorry.">
 </p>
+    
