@@ -22,6 +22,9 @@
     "express": "^4.18.1",
     "prisma": "^3.14.0"
   },
+  "prisma": {
+    "seed": "node prisma/seed.js"
+  },
   "dependencies": {
     "@prisma/client": "^3.14.0"
   }
