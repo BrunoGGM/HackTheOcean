@@ -47,4 +47,8 @@ Después
     cd client
     npm install 
     npm run watch
+
+<p align="center">
+  <img src="/docs/img/header.jpg">
+</p>
     
