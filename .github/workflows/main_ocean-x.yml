@@ -21,6 +21,20 @@ jobs:
         with:
           node-version: '16.x'
 
+      - name: 'Create env file'
+        run: |
+          touch .env
+          echo DATABASE_URL="postgresql://postgres@ocean-hack:2dLEA-68@ocean-hack.postgres.database.azure.com:5432/postgres?schema=public" >> .env
+          cat .env
+
+      - name: npm install cli-service
+        run: |
+          npm install @vue/cli-service -g
+
+      - name: prisma generate
+        run: |
+          npx prisma generate
+
       - name: npm install, build, and test
         run: |
           npm install
