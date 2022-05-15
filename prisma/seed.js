@@ -26,15 +26,15 @@ const prisma = new PrismaClient();
     });
 
     const animal = await prisma.animal.upsert({
-      where: { name: "La ballena azul" },
+      where: { name: "Ballena Azul" },
       update: {},
       create: {
-        name: "La ballena azul",
+        name: "Ballena Azul",
         description:
           "A pesar de ser el animal más grande del mundo, es uno de los que también se encuentra en peligro de extinción. Solo quedan unos pocos ejemplares de ballena azul en el Golfo de California y sur de Chile.",
         description_danger: "La pesca del hombre",
-        img_front_path: "./img/ballena.jpg",
-        img_back_path: "./img/ballena.jpg",
+        img_front_path: "https://imagenes.elpais.com/resizer/1Dqhr4gnH5YxUp7paf8ZLEHmFLY=/1960x1470/cloudfront-eu-central-1.images.arcpublishing.com/prisa/NP2AWB3HXKVEZ6P6SZSYSDA3DY.jpg",
+        img_back_path: "https://i0.wp.com/www.diariosustentable.com/wp-content/uploads/2021/02/Aleta-Ballena-Azul.jpg?fit=800%2C533&ssl=1g",
       },
     });
 
