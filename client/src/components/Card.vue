@@ -29,7 +29,6 @@
             {{ activity.description_dangers }}
             <hr />
           </div>
-          </div>
         </div>
       </div>
     </div>

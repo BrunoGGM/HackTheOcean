@@ -19,3 +19,14 @@ model User {
   dateCreated DateTime @default(now())
   lastUpdated DateTime @updatedAt
 }
+
+model Animal {
+  id Int @default(autoincrement())
+  name String @unique
+  description String @db.Text
+  description_danger String @db.Text
+  img_Front_Path String @db.VarChar(255)
+  img_back_Path String @db.VarChar(255)
+  dateCreated DateTime @default(now())
+  lastUpdated DateTime @updatedAt
+}

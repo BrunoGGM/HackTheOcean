@@ -29,6 +29,25 @@ app.post("/api/users", async (req, res) => {
   return res.json({ message });
 });
 
+  app.get('/api/animals', async (req, res) => {
+    const allAnimal =  await prisma.animal.findMany({});
+    res.json(allAnimal);
+  });
+
+  app.post('/api/animals', async (req, res) => {
+    const animal = {
+      name: req.body.name,
+      description: req.body.description,
+      description_danger: req.body.description_danger,
+      img_Front_Path: req.body.img_Front_Path,
+      img_back_Path: req.body.img_back_Path
+     };
+    const message = 'Animal creado creado.';
+    await prisma.animal.create({data: animal});
+    return res.json({message});
+  });
+
+   
 app.listen(port, () => {
   console.log(`Listening to requests on port ${port}`);
 });
