@@ -1,5 +1,6 @@
 <template>
   <div class="app">
+<<<<<<< HEAD
     <AnimalCard
       v-for="(card, index) in cards"
       :key="index"
@@ -15,6 +16,18 @@
            id="email"
            class="form-control"
            v-model="userData.email">
+=======
+    <div class="row">
+      <AnimalCard
+        v-for="(card, index) in animals.response"
+        :key="index"
+        :activity="card"
+        :isSwinggable="true"
+        :id="'card-' + card.id"
+        :ref="'card-' + card.id"
+        class="col-12 col-md-6 col-lg-3"
+      ></AnimalCard>
+>>>>>>> 34360cde1452f947db4adb8d58f3ee26e98a0d95
     </div>
   </div>
   
@@ -23,6 +36,7 @@
 
 <script>
 import AnimalCard from "./components/Card.vue";
+import axios from "axios";
 
 export default {
   name: "App",
@@ -31,6 +45,7 @@ export default {
   },
   data() {
     return {
+<<<<<<< HEAD
       cards: [
         {
           id: 1,
@@ -73,11 +88,35 @@ export default {
       userData: {
                     email: ''
                 },
+=======
+      animals: {
+        response: [],
+        loaded: false,
+      },
+>>>>>>> 34360cde1452f947db4adb8d58f3ee26e98a0d95
     };
+  },
+  methods: {
+    fetchAnimals() {
+      let self = this;
+      axios
+        .get("/api/animals")
+        .then((response) => {
+          self.animals.response = response.data;
+        })
+        .catch((error) => {
+          console.log(error);
+        })
+        .finally(() => {
+          self.animals.loaded = true;
+        });
+    },
+  },
+  created() {
+    this.fetchAnimals();
   },
 };
 </script>
 
 <style>
-
 </style>

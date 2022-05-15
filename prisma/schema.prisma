@@ -25,8 +25,8 @@ model Animal {
   name String @unique
   description String @db.Text
   description_danger String @db.Text
-  img_Front_Path String @db.VarChar(255)
-  img_back_Path String @db.VarChar(255)
+  img_front_path String @db.VarChar(255)
+  img_back_path String @db.VarChar(255)
   dateCreated DateTime @default(now())
   lastUpdated DateTime @updatedAt
 }
