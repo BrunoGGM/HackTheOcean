@@ -38,7 +38,11 @@ jobs:
       - name: prisma migrate
         run: |
           npx prisma migrate dev --name init
-        
+
+      - name: prisma seed
+        run: |
+          node prisma/seed.js        
+
       - name: npm install, build, and test
         run: |
           npm install
