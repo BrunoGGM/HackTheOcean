@@ -1,13 +1,21 @@
+<p align="center">
+  <img src="/docs/img/header.jpg">
+</p>
+
 # HackTheOcean
 Repositorio para el hackathon "HACK THE OCEAN" de LauchX 
 
 # PETrackers
 
-* Bruno 
-* Alejandro
-* Yishaell
-* Miriam
-* César
+ * launchx02730@innovaccion.mx -> Alejandro Gutiérrez
+
+ * launchx06383@innovaccion.mx -> Bruno Gómez
+
+ * launchx08406@innovaccion.mx -> César Guadalupe Meza
+
+ * launchx00446@innovaccion.mx -> Miriam Alicia Márquez
+
+ * launchx10170@innovaccion.mx -> Yishaell Ramírez Vallejo
 
 ## Problemática
 
@@ -47,8 +55,4 @@ Después
     cd client
     npm install 
     npm run watch
-
-<p align="center">
-  <img src="/docs/img/header.jpg">
-</p>
     
