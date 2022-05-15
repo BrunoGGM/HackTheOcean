@@ -1,9 +1,9 @@
 <template>
   <div
     class="animal-card handle"
-    @mouseup="isFlipped =! isFlipped" :class="{ flip: isFlipped }"
+    @mouseup="isFlipped = !isFlipped"
+    :class="{ flip: isFlipped }"
     ref="animal-card"
-    
   >
     <div
       class="face front"
@@ -62,73 +62,18 @@ export default {
 
 
 <style>
-/*Winning move*/
-
-.winner-dice {
-  border: solid 3px #aaa;
-  border-radius: 3px;
-  display: block;
-  width: 80px;
-  height: 80px;
-  margin: 7px auto;
-  box-sizing: border-box;
-  padding: 10px;
-  position: absolute;
-}
-
-.winner-dice span {
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  text-align: center;
-  line-height: 80px;
-  font-size: 50px;
-  font-weight: bold;
-}
-
-.winner-dice.black {
-  background-color: #000;
-  color: #fff;
-}
-
-.winner-dice.white {
-  background-color: #fff;
-  color: #000;
-}
-
-/* Winning move* */
 
 .animal-card {
   position: relative;
-    transform-style: preserve-3d;
-    transition: transform 0.5s;
-    cursor: pointer;
-    font-family: "vcr_osd_monoregular";
-    width: 24%;
-    height: 64%;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  cursor: pointer;
+  font-family: "vcr_osd_monoregular";
+  width: 24%;
+  height: 500px;
   color: white;
-  margin: 10px;
   border-radius: 10px;
   user-select: none;
-  
-}
-#card-1{
-  position: absolute;
-  left: 12%;
-  height: 53%;
-}
-#card-2{
-  position: absolute;
-  right: 12% ;
-  height: 53%;
-}
-#card-3{
-  position: absolute;
-  justify-content: center;
-  height: 53%;
 }
 
 .animal-card.flip {
@@ -155,8 +100,6 @@ export default {
   transform: rotateY(180deg);
 }
 
-
-
 .animal-card .face {
   border-radius: 10px;
 }
@@ -177,15 +120,6 @@ export default {
   background-size: cover;
 }
 
-.animal-card .front .capacities {
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  height: 70px;
-  padding: 10px;
-  border-radius: 10px;
-  background: rgba(17, 17, 17, 0.6);
-}
 
 .animal-card .back {
   font-size: 18px;
@@ -207,7 +141,6 @@ export default {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  
 }
 .animal-card .back .description {
   padding: -10%;
@@ -215,7 +148,6 @@ export default {
   position: absolute;
   justify-content: safe;
 }
-
 
 .animal-card .back .logo {
   position: relative;
@@ -251,18 +183,15 @@ export default {
   text-shadow: 1px 1px 2px black;
 }
 
-
-
-.fondo{
+.fondo {
   position: absolute;
   width: 100%;
   z-index: -1;
 }
-.app{
+.app {
   display: flex;
   padding-top: 10%;
   justify-content: center;
   width: 100%;
 }
-
 </style>
