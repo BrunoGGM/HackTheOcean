@@ -21,12 +21,6 @@ Repositorio para el hackathon "HACK THE OCEAN" de LauchX
 
 Extinción o falta de cuidado de las especies marinas.
 
-## Ver video relacionado con la problemática
-
-<p align="center">
-  <img src="https://i.pinimg.com/originals/60/c1/4a/60c14a43fb4745795b3b358868517e79.png" width="350" title="Bromita, sorry.">
-</p>
-
 ## Solución 
 
 Creación de página web interactiva para crear conciencia en las personas con el desplegue de información e iniciativas de votación para salvarlas.
@@ -56,3 +50,9 @@ Después
     npm install 
     npm run watch
     
+
+## ¿Te vas a ir sin ver este video? 
+
+<p align="center">
+  <img src="https://i.pinimg.com/originals/60/c1/4a/60c14a43fb4745795b3b358868517e79.png" width="350" title="Bromita, sorry.">
+</p>
