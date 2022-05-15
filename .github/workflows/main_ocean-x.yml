@@ -41,6 +41,16 @@ jobs:
           npm run build --if-present
           npm run test --if-present
 
+      - name: build client
+        run: |
+          cd client
+          npm install
+          npm run build --if-present
+
+      - name: return to root
+        run: |
+          cd ..
+
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
         with:
