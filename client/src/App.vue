@@ -9,7 +9,16 @@
       :ref="'card-' + card.id"
       class="float-start"
     ></AnimalCard>
+    <div class="form-group">
+      <label for="email">Your Email Address</label>
+      <input type="text"
+           id="email"
+           class="form-control"
+           v-model="userData.email">
+    </div>
   </div>
+  
+    
 </template>
 
 <script>
@@ -60,6 +69,10 @@ export default {
             "https://cumbrepuebloscop20.org/wp-content/uploads/2018/11/turtle-863336_640.jpg",
         },
       ],
+
+      userData: {
+                    email: ''
+                },
     };
   },
 };

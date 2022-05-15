@@ -251,10 +251,8 @@ export default {
   text-shadow: 1px 1px 2px black;
 }
 
-
-
 .fondo{
-  position: absolute;
+  position: fixed;
   width: 100%;
   z-index: -1;
 }
@@ -264,5 +262,28 @@ export default {
   justify-content: center;
   width: 100%;
 }
+.Cesta{
+  position: fixed;
+  left: 1%;
+  top: 89%;
+  width: 8%;
+  
+}
+.Cesta:hover{
+  transform: scale(1.2);
+  transition-duration: 300ms;
 
+}
+.Cesta img{
+  width: 100%;
+}
+body{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+#Formulario{
+  top: 161%;
+  position: absolute;
+}
 </style>
