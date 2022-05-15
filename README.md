@@ -17,6 +17,14 @@ Extinción o falta de cuidado de las especies marinas.
 
 Creación de página web interactiva para crear conciencia en las personas con el desplegue de información e iniciativas de votación para salvarlas.
 
+## Servicios utilizados
+
+ - Azure Blob Storage
+ - Azure App Service 
+ - Azure Database for PostgreSQL
+
+Deploy en Azure por Bruno
+
 ## Ejecutar el proyecto
 
 En la carpeta raiz crear un archivo llamado .env con lo siguiente dentro DATABASE_URL="postgresql://postgres:root@localhost:5432/ocean?schema=public"
