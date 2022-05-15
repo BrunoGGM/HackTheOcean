@@ -62,7 +62,6 @@ export default {
 
 
 <style>
-
 .animal-card {
   position: relative;
   transform-style: preserve-3d;
@@ -119,7 +118,6 @@ export default {
   transition: background 0.3s;
   background-size: cover;
 }
-
 
 .animal-card .back {
   font-size: 18px;
@@ -183,13 +181,8 @@ export default {
   text-shadow: 1px 1px 2px black;
 }
 
-<<<<<<< HEAD
-.fondo{
-  position: fixed;
-=======
 .fondo {
-  position: absolute;
->>>>>>> 34360cde1452f947db4adb8d58f3ee26e98a0d95
+  position: fixed;
   width: 100%;
   z-index: -1;
 }
@@ -199,31 +192,27 @@ export default {
   justify-content: center;
   width: 100%;
 }
-<<<<<<< HEAD
-.Cesta{
+
+.Cesta {
   position: fixed;
   left: 1%;
   top: 89%;
   width: 8%;
-  
 }
-.Cesta:hover{
+.Cesta:hover {
   transform: scale(1.2);
   transition-duration: 300ms;
-
 }
-.Cesta img{
+.Cesta img {
   width: 100%;
 }
-body{
+body {
   width: 100%;
   height: 100%;
   position: absolute;
 }
-#Formulario{
+#Formulario {
   top: 161%;
   position: absolute;
 }
-=======
->>>>>>> 34360cde1452f947db4adb8d58f3ee26e98a0d95
 </style>
