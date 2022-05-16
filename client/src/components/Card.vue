@@ -1,38 +1,38 @@
 <template>
-  <div
-    class="animal-card handle"
-    @mouseup="isFlipped = !isFlipped"
-    :class="{ flip: isFlipped }"
-    ref="animal-card"
-  >
     <div
-      class="face front"
-      :style="{ backgroundImage: 'url(' + activity.img_front_path + ')' }"
+      class="animal-card handle"
+      @mouseup="isFlipped = !isFlipped"
+      :class="{ flip: isFlipped }"
+      ref="animal-card"
     >
-      <h2>{{ activity.name }}</h2>
-      <p>
-        {{ activity.description }}
-      </p>
-    </div>
-
-    <div class="face back">
       <div
-        class="header"
-        :style="{ backgroundImage: 'url(' + activity.img_back_path + ')' }"
-      ></div>
-      <div class="description">
-        <div class="row">
-          <div class="col-12">
-            <h4 class="text-center">{{ activity.name }}</h4>
-          </div>
-          <div class="col-12 mb-1">
-            {{ activity.description_danger }}
-            <hr />
+        class="face front"
+        :style="{ backgroundImage: 'url(' + activity.img_front_path + ')' }"
+      >
+        <h2>{{ activity.name }}</h2>
+        <p>
+          {{ activity.description }}
+        </p>
+      </div>
+
+      <div class="face back">
+        <div
+          class="header"
+          :style="{ backgroundImage: 'url(' + activity.img_back_path + ')' }"
+        ></div>
+        <div class="description">
+          <div class="row">
+            <div class="col-12">
+              <h4 class="text-center">{{ activity.name }}</h4>
+            </div>
+            <div class="col-12 mb-1">
+              {{ activity.description_danger }}
+              <hr />
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 </template>
 
 <script>
@@ -73,6 +73,7 @@ export default {
   color: white;
   border-radius: 10px;
   user-select: none;
+  margin: 4%;
 }
 
 .animal-card.flip {
@@ -193,6 +194,7 @@ export default {
   width: 100%;
 }
 
+
 .Cesta {
   position: fixed;
   left: 1%;
@@ -206,13 +208,12 @@ export default {
 .Cesta img {
   width: 100%;
 }
-body {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-}
-#Formulario {
-  top: 161%;
-  position: absolute;
+
+
+@media (max-width: 800px) {
+  .animal-card {
+    width: 100%;
+    margin-top: 20%;
+  }
 }
 </style>
