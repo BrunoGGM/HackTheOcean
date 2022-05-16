@@ -91,4 +91,4 @@ jobs:
           app-name: 'ocean-x'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B4B97D07052641FDB12B30EACDD39D07 }}
-          package: .
+          package: release.zip
