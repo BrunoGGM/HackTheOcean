@@ -35,6 +35,12 @@ Deploy en Azure por Bruno
 
 Link de despliegue: [PETrackers](https://ocean-x.azurewebsites.net/).
 
+## Diagrama solución
+
+<p align="center">
+  <img src="/docs/img/diagrama.png">
+</p>
+
 ## Ejecutar el proyecto
 
 En la carpeta raiz crear un archivo llamado .env con lo siguiente dentro DATABASE_URL="postgresql://postgres:root@localhost:5432/ocean?schema=public"
@@ -54,7 +60,7 @@ Después
 
 Se visualizará en: 
 
-    http://localhost:3000 o http://localhost:8080
+    http://localhost:3000 ó http://localhost:8080
 
 ## ¿Te vas a ir sin ver este video?
 
